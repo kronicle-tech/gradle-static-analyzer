@@ -1,0 +1,11 @@
+package tech.kronicle.plugins.gradle.GradleStaticAnalyzerCodebaseTest.PluginDefinedInSettingsFileWithApplyTrue
+
+pluginManagement {
+    repositories {
+        mavenCentral()
+    }
+
+    plugins {
+        id "org.springframework.boot" version "$springBootVersion" apply true
+    }
+}

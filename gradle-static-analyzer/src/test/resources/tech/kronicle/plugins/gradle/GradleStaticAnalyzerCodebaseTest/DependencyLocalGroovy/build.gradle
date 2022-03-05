@@ -1,0 +1,9 @@
+package tech.kronicle.plugins.gradle.GradleStaticAnalyzerCodebaseTest.DependencyLocalGroovy
+
+plugins {
+    id "groovy"
+}
+
+dependencies {
+    compile localGroovy()
+}

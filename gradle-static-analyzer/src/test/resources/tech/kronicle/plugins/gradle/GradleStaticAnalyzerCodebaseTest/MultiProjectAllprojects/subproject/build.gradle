@@ -1,0 +1,5 @@
+package tech.kronicle.plugins.gradle.GradleStaticAnalyzerCodebaseTest.MultiProjectAllprojects.subproject
+
+project.ext {
+    hibernateValidatorVersion = "6.1.6.Final"
+}

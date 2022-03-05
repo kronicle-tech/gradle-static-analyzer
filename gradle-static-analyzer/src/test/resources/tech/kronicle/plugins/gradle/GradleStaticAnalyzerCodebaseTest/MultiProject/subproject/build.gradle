@@ -1,0 +1,9 @@
+package tech.kronicle.plugins.gradle.GradleStaticAnalyzerCodebaseTest.MultiProject.subproject
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    annotationProcessor "org.projectlombok:lombok:1.18.16"
+}

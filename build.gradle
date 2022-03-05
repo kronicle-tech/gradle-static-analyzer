@@ -1,0 +1,22 @@
+plugins {
+    id "base"
+    id "pl.allegro.tech.build.axion-release"
+}
+
+subprojects {
+    apply plugin: "java"
+    apply from: "$rootDir/gradle/repos.gradle"
+
+    version = scmVersion.version
+
+    compileJava {
+        options.release = javaMajorVersion.toInteger()
+    }
+
+    java {
+        sourceCompatibility = JavaVersion.toVersion(javaVersion)
+        targetCompatibility = JavaVersion.toVersion(javaVersion)
+    }
+
+    [compileJava, compileTestJava]*.options*.encoding = "UTF-8"
+}
