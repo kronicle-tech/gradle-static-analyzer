@@ -1,0 +1,4 @@
+package tech.kronicle.plugins.gradle.GradleStaticAnalyzerCodebaseTest.ProjectBuiltInProperties
+
+def variable1 = project.name
+def variable2 = "$project.name"

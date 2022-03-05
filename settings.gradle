@@ -1,0 +1,15 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+    }
+
+    plugins {
+        id "io.freefair.lombok" version lombokPluginVersion apply false
+        id "com.jfrog.artifactory" version artifactoryPluginVersion apply false
+        id "pl.allegro.tech.build.axion-release" version axionReleaseVersion apply false
+    }
+}
+
+rootProject.name = "gradle-static-analyzer"
+
+include "gradle-static-analyzer"

@@ -1,0 +1,5 @@
+package tech.kronicle.plugins.gradle.GradleStaticAnalyzerCodebaseTest.ApplyFromTo.gradle
+
+repositories {
+    mavenCentral()
+}

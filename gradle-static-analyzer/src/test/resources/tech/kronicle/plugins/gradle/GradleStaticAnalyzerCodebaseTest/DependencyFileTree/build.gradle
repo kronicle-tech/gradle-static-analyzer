@@ -1,0 +1,9 @@
+package tech.kronicle.plugins.gradle.GradleStaticAnalyzerCodebaseTest.DependencyFileTree
+
+plugins {
+    id "groovy"
+}
+
+dependencies {
+    compile fileTree(dir: "${rootDir}/libs", include: ["*.jar"])
+}
