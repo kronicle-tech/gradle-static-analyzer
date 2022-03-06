@@ -1,10 +1,10 @@
 plugins {
     id "java-library"
-    id 'jvm-test-suite'
     id "io.freefair.lombok"
 }
 
 group "tech.kronicle"
+archivesBaseName = "gradle-static-analyzer"
 description "A Java library for performing static analysis on a Gradle build script to find out what dependencies it is using"
 
 apply from: "$rootDir/gradle/publish.gradle"
