@@ -14,10 +14,10 @@ import tech.kronicle.gradlestaticanalyzer.internal.services.PropertyExpander;
 import tech.kronicle.gradlestaticanalyzer.internal.services.PropertyRetriever;
 import tech.kronicle.gradlestaticanalyzer.internal.utils.InheritingHashMap;
 import tech.kronicle.gradlestaticanalyzer.internal.utils.InheritingHashSet;
-import tech.kronicle.testutils.LogCaptor;
-import tech.kronicle.utils.Comparators;
 import tech.kronicle.sdk.models.Software;
 import tech.kronicle.sdk.models.SoftwareType;
+import tech.kronicle.testutils.LogCaptor;
+import tech.kronicle.utils.Comparators;
 
 import java.util.ArrayList;
 import java.util.List;

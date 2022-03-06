@@ -1,7 +1,6 @@
 package tech.kronicle.gradlestaticanalyzer;
 
 import org.junit.jupiter.api.Test;
-import tech.kronicle.gradlestaticanalyzer.GradleAnalysis;
 import tech.kronicle.sdk.models.Software;
 import tech.kronicle.sdk.models.SoftwareRepository;
 

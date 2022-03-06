@@ -22,13 +22,13 @@ import tech.kronicle.gradlestaticanalyzer.internal.services.SoftwareRepositoryFa
 import tech.kronicle.gradlestaticanalyzer.internal.utils.ArtifactUtils;
 import tech.kronicle.gradlestaticanalyzer.internal.utils.InheritingHashMap;
 import tech.kronicle.gradlestaticanalyzer.internal.utils.InheritingHashSet;
-import tech.kronicle.utils.Comparators;
-import tech.kronicle.utils.FileUtils;
 import tech.kronicle.sdk.models.Software;
 import tech.kronicle.sdk.models.SoftwareDependencyType;
 import tech.kronicle.sdk.models.SoftwareRepository;
 import tech.kronicle.sdk.models.SoftwareRepositoryScope;
 import tech.kronicle.sdk.models.SoftwareType;
+import tech.kronicle.utils.Comparators;
+import tech.kronicle.utils.FileUtils;
 
 import java.nio.file.Files;
 import java.nio.file.Path;

@@ -17,11 +17,11 @@ import tech.kronicle.gradlestaticanalyzer.internal.models.mavenxml.project.Depen
 import tech.kronicle.gradlestaticanalyzer.internal.models.mavenxml.project.Parent;
 import tech.kronicle.gradlestaticanalyzer.internal.models.mavenxml.project.Properties;
 import tech.kronicle.gradlestaticanalyzer.internal.utils.ArtifactUtils;
-import tech.kronicle.utils.StringUtils;
 import tech.kronicle.sdk.models.Software;
 import tech.kronicle.sdk.models.SoftwareDependencyType;
 import tech.kronicle.sdk.models.SoftwareRepository;
 import tech.kronicle.sdk.models.SoftwareType;
+import tech.kronicle.utils.StringUtils;
 
 import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamException;

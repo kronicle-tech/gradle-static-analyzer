@@ -1,10 +1,10 @@
 package tech.kronicle.gradlestaticanalyzer;
 
 import tech.kronicle.gradlestaticanalyzer.internal.constants.MavenPackagings;
-import tech.kronicle.testutils.BaseTest;
-import tech.kronicle.utils.Comparators;
 import tech.kronicle.sdk.models.Software;
 import tech.kronicle.sdk.models.SoftwareDependencyType;
+import tech.kronicle.testutils.BaseTest;
+import tech.kronicle.utils.Comparators;
 
 import java.util.List;
 import java.util.Map;

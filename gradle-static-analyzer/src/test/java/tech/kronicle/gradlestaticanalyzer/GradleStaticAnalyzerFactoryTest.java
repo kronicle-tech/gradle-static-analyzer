@@ -2,8 +2,6 @@ package tech.kronicle.gradlestaticanalyzer;
 
 import lombok.SneakyThrows;
 import org.junit.jupiter.api.Test;
-import tech.kronicle.gradlestaticanalyzer.GradleStaticAnalyzer;
-import tech.kronicle.gradlestaticanalyzer.GradleStaticAnalyzerFactory;
 import tech.kronicle.gradlestaticanalyzer.config.DownloadCacheConfig;
 import tech.kronicle.gradlestaticanalyzer.config.DownloaderConfig;
 import tech.kronicle.gradlestaticanalyzer.config.GradleConfig;

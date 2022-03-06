@@ -8,11 +8,11 @@ import tech.kronicle.gradlestaticanalyzer.internal.constants.MavenPackagings;
 import tech.kronicle.gradlestaticanalyzer.internal.groovyscriptvisitors.VisitorState;
 import tech.kronicle.gradlestaticanalyzer.internal.utils.InheritingHashMap;
 import tech.kronicle.gradlestaticanalyzer.internal.utils.InheritingHashSet;
-import tech.kronicle.testutils.LogCaptor;
-import tech.kronicle.testutils.SimplifiedLogEvent;
 import tech.kronicle.sdk.models.Software;
 import tech.kronicle.sdk.models.SoftwareDependencyType;
 import tech.kronicle.sdk.models.SoftwareType;
+import tech.kronicle.testutils.LogCaptor;
+import tech.kronicle.testutils.SimplifiedLogEvent;
 
 import java.util.Set;
 
