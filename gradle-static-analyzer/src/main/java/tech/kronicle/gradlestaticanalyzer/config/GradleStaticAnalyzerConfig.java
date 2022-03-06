@@ -8,7 +8,7 @@ import java.util.List;
 
 @Value
 @NonFinal
-public class GradleConfig {
+public class GradleStaticAnalyzerConfig {
 
     List<String> additionalSafeSoftwareRepositoryUrls;
     List<GradleCustomRepository> customRepositories;

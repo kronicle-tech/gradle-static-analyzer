@@ -1,6 +1,6 @@
 package tech.kronicle.gradlestaticanalyzer.internal.services;
 
-import tech.kronicle.gradlestaticanalyzer.config.GradleConfig;
+import tech.kronicle.gradlestaticanalyzer.config.GradleStaticAnalyzerConfig;
 
 import java.util.Collection;
 import java.util.List;
@@ -14,7 +14,7 @@ public class SoftwareRepositoryUrlSafetyChecker {
 
     private final List<String> safeSoftwareRepositoryUrls;
 
-    public SoftwareRepositoryUrlSafetyChecker(GradleConfig config) {
+    public SoftwareRepositoryUrlSafetyChecker(GradleStaticAnalyzerConfig config) {
         safeSoftwareRepositoryUrls = createSafeSoftwareRepositoryUrls(config);
     }
 
@@ -23,7 +23,7 @@ public class SoftwareRepositoryUrlSafetyChecker {
         return safeSoftwareRepositoryUrls.stream().anyMatch(softwareRepositoryUrl::startsWith);
     }
 
-    private List<String> createSafeSoftwareRepositoryUrls(GradleConfig config) {
+    private List<String> createSafeSoftwareRepositoryUrls(GradleStaticAnalyzerConfig config) {
         return Stream.concat(SAFE_REPOSITORY_URLS.stream(), Optional.ofNullable(config.getAdditionalSafeSoftwareRepositoryUrls()).stream().flatMap(Collection::stream))
                 .map(this::ensureUrlHasTrailingSlash)
                 .collect(Collectors.toList());

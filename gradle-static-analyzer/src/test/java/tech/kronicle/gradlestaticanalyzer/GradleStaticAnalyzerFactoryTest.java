@@ -4,7 +4,7 @@ import lombok.SneakyThrows;
 import org.junit.jupiter.api.Test;
 import tech.kronicle.gradlestaticanalyzer.config.DownloadCacheConfig;
 import tech.kronicle.gradlestaticanalyzer.config.DownloaderConfig;
-import tech.kronicle.gradlestaticanalyzer.config.GradleConfig;
+import tech.kronicle.gradlestaticanalyzer.config.GradleStaticAnalyzerConfig;
 import tech.kronicle.gradlestaticanalyzer.config.PomCacheConfig;
 import tech.kronicle.gradlestaticanalyzer.config.UrlExistsCacheConfig;
 
@@ -18,7 +18,7 @@ public class GradleStaticAnalyzerFactoryTest {
     @Test
     public void newGradleStaticAnalyzerShouldCreateANewInstance() {
         // Given
-        GradleConfig config = new GradleConfig(
+        GradleStaticAnalyzerConfig config = new GradleStaticAnalyzerConfig(
                 null,
                 null,
                 new DownloaderConfig(Duration.ofSeconds(60)),

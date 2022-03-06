@@ -5,7 +5,7 @@ import io.github.resilience4j.core.IntervalFunction;
 import io.github.resilience4j.retry.RetryConfig;
 import io.github.resilience4j.retry.RetryRegistry;
 import lombok.SneakyThrows;
-import tech.kronicle.gradlestaticanalyzer.config.GradleConfig;
+import tech.kronicle.gradlestaticanalyzer.config.GradleStaticAnalyzerConfig;
 import tech.kronicle.gradlestaticanalyzer.internal.groovyscriptvisitors.BaseBuildFileVisitorDependencies;
 import tech.kronicle.gradlestaticanalyzer.internal.groovyscriptvisitors.BuildGradleVisitor;
 import tech.kronicle.gradlestaticanalyzer.internal.groovyscriptvisitors.SettingsGradleVisitor;
@@ -57,7 +57,7 @@ import static tech.kronicle.utils.JsonMapperFactory.createJsonMapper;
 public final class GradleStaticAnalyzerFactory {
 
     @SneakyThrows
-    public static GradleStaticAnalyzer newGradleStaticAnalyzer(GradleConfig config) {
+    public static GradleStaticAnalyzer newGradleStaticAnalyzer(GradleStaticAnalyzerConfig config) {
         PropertyRetriever propertyRetriever = new PropertyRetriever();
         PropertyExpander propertyExpander = new PropertyExpander(propertyRetriever);
         FileUtils fileUtils = createFileUtils();

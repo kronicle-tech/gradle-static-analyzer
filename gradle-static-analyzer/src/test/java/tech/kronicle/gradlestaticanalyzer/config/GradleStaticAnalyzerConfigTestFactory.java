@@ -5,9 +5,9 @@ import java.util.List;
 
 public final class GradleStaticAnalyzerConfigTestFactory {
 
-    public static GradleConfig newGradleStaticAnalyzerConfig(Class<?> testClass) {
+    public static GradleStaticAnalyzerConfig newGradleStaticAnalyzerConfig(Class<?> testClass) {
         String testDataDir = "build/test-data/" + testClass.getName();
-        return new GradleConfig(
+        return new GradleStaticAnalyzerConfig(
                 List.of("http://localhost:36211/repo-with-authentication/"),
                 List.of(
                         new GradleCustomRepository("someCustomRepository", "https://example.com/repo/", List.of()),
