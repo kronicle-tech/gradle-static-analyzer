@@ -1,6 +1,6 @@
 package tech.kronicle.gradlestaticanalyzer.internal.services;
 
-import tech.kronicle.gradlestaticanalyzer.config.GradleConfig;
+import tech.kronicle.gradlestaticanalyzer.config.GradleStaticAnalyzerConfig;
 import tech.kronicle.gradlestaticanalyzer.config.GradleCustomRepository;
 
 import java.util.Map;
@@ -11,7 +11,7 @@ public class CustomRepositoryRegistry {
 
     private final Map<String, String> customRepositoryUrls;
 
-    public CustomRepositoryRegistry(GradleConfig config) {
+    public CustomRepositoryRegistry(GradleStaticAnalyzerConfig config) {
         customRepositoryUrls = Optional.ofNullable(config.getCustomRepositories())
                 .map(items -> items.stream()
                         .collect(Collectors.toMap(

@@ -1,6 +1,6 @@
 package tech.kronicle.gradlestaticanalyzer.internal.services;
 
-import tech.kronicle.gradlestaticanalyzer.config.GradleConfig;
+import tech.kronicle.gradlestaticanalyzer.config.GradleStaticAnalyzerConfig;
 import tech.kronicle.gradlestaticanalyzer.config.HttpHeaderConfig;
 
 import java.util.List;
@@ -12,7 +12,7 @@ public class RepositoryAuthHeadersRegistry {
 
     private final Map<String, List<HttpHeaderConfig>> customRepositories;
 
-    public RepositoryAuthHeadersRegistry(GradleConfig config) {
+    public RepositoryAuthHeadersRegistry(GradleStaticAnalyzerConfig config) {
         this.customRepositories = Optional.ofNullable(config.getCustomRepositories())
                 .orElse(List.of())
                 .stream()

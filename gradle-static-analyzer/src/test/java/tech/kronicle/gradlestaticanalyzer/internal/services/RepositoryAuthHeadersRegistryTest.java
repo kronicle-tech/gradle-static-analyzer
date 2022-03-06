@@ -1,7 +1,7 @@
 package tech.kronicle.gradlestaticanalyzer.internal.services;
 
 import org.junit.jupiter.api.Test;
-import tech.kronicle.gradlestaticanalyzer.config.GradleConfig;
+import tech.kronicle.gradlestaticanalyzer.config.GradleStaticAnalyzerConfig;
 import tech.kronicle.gradlestaticanalyzer.config.GradleCustomRepository;
 import tech.kronicle.gradlestaticanalyzer.config.HttpHeaderConfig;
 
@@ -14,7 +14,7 @@ public class RepositoryAuthHeadersRegistryTest {
     @Test
     void getSoftwareRepositoryAuthHeadersWhenCustomRepositoriesListIsNullShouldReturnNull() {
         // Given
-        GradleConfig config = new GradleConfig(null, null, null, null, null, null);
+        GradleStaticAnalyzerConfig config = new GradleStaticAnalyzerConfig(null, null, null, null, null, null);
         RepositoryAuthHeadersRegistry underTest = new RepositoryAuthHeadersRegistry(config);
 
         // When
@@ -27,7 +27,7 @@ public class RepositoryAuthHeadersRegistryTest {
     @Test
     void getSoftwareRepositoryAuthHeadersWhenCustomRepositoriesListIsEmptyShouldReturnNull() {
         // Given
-        GradleConfig config = new GradleConfig(List.of(), null, null, null, null, null);
+        GradleStaticAnalyzerConfig config = new GradleStaticAnalyzerConfig(List.of(), null, null, null, null, null);
         RepositoryAuthHeadersRegistry underTest = new RepositoryAuthHeadersRegistry(config);
 
         // When
@@ -45,7 +45,7 @@ public class RepositoryAuthHeadersRegistryTest {
                         new HttpHeaderConfig("test-header-1", "test-value-1")
                 ))
         );
-        GradleConfig config = new GradleConfig(null, customRepositories, null, null, null, null);
+        GradleStaticAnalyzerConfig config = new GradleStaticAnalyzerConfig(null, customRepositories, null, null, null, null);
         RepositoryAuthHeadersRegistry underTest = new RepositoryAuthHeadersRegistry(config);
 
         // When
@@ -64,7 +64,7 @@ public class RepositoryAuthHeadersRegistryTest {
         List<GradleCustomRepository> customRepositories = List.of(
                 new GradleCustomRepository("testCustomRepository1", "https://example.com/repo-1", httpHeaders)
         );
-        GradleConfig config = new GradleConfig(null, customRepositories, null, null, null, null);
+        GradleStaticAnalyzerConfig config = new GradleStaticAnalyzerConfig(null, customRepositories, null, null, null, null);
         RepositoryAuthHeadersRegistry underTest = new RepositoryAuthHeadersRegistry(config);
 
         // When
@@ -83,7 +83,7 @@ public class RepositoryAuthHeadersRegistryTest {
         List<GradleCustomRepository> customRepositories = List.of(
                 new GradleCustomRepository("testCustomRepository1", "https://example.com/repo-1", httpHeaders)
         );
-        GradleConfig config = new GradleConfig(null, customRepositories, null, null, null, null);
+        GradleStaticAnalyzerConfig config = new GradleStaticAnalyzerConfig(null, customRepositories, null, null, null, null);
         RepositoryAuthHeadersRegistry underTest = new RepositoryAuthHeadersRegistry(config);
 
         // When
@@ -103,7 +103,7 @@ public class RepositoryAuthHeadersRegistryTest {
         List<GradleCustomRepository> customRepositories = List.of(
                 new GradleCustomRepository("testCustomRepository1", "https://example.com/repo-1", httpHeaders)
         );
-        GradleConfig config = new GradleConfig(null, customRepositories, null, null, null, null);
+        GradleStaticAnalyzerConfig config = new GradleStaticAnalyzerConfig(null, customRepositories, null, null, null, null);
         RepositoryAuthHeadersRegistry underTest = new RepositoryAuthHeadersRegistry(config);
 
         // When

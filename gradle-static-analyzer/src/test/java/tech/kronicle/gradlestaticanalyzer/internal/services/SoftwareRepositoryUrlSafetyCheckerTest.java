@@ -3,7 +3,7 @@ package tech.kronicle.gradlestaticanalyzer.internal.services;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
-import tech.kronicle.gradlestaticanalyzer.config.GradleConfig;
+import tech.kronicle.gradlestaticanalyzer.config.GradleStaticAnalyzerConfig;
 import tech.kronicle.gradlestaticanalyzer.internal.constants.SoftwareRepositoryUrls;
 
 import java.util.List;
@@ -15,7 +15,7 @@ public class SoftwareRepositoryUrlSafetyCheckerTest {
     private static final String CUSTOM_SAFE_REPO_URL = "https://repo.example.com/test-1/";
     private static final String UNSAFE_REPO_URL = "https://repo.example.com/test-2/";
 
-    private final SoftwareRepositoryUrlSafetyChecker underTest = new SoftwareRepositoryUrlSafetyChecker(new GradleConfig(List.of(CUSTOM_SAFE_REPO_URL), null, null, null, null, null));
+    private final SoftwareRepositoryUrlSafetyChecker underTest = new SoftwareRepositoryUrlSafetyChecker(new GradleStaticAnalyzerConfig(List.of(CUSTOM_SAFE_REPO_URL), null, null, null, null, null));
 
     @Test
     public void isSoftwareRepositorySafeShouldMatchSafeUrlWithTrailingSlash() {
