@@ -1,0 +1,13 @@
+package tech.kronicle.gradlestaticanalyzer.GradleStaticAnalyzerCodebaseTest.DependencyFollowRedirect
+
+plugins {
+    id "java"
+}
+
+repositories {
+    gradlePluginPortal()
+}
+
+dependencies {
+    compile "org.springframework.boot:spring-boot-starter-web:2.3.4.RELEASE"
+}

@@ -1,0 +1,7 @@
+package tech.kronicle.gradlestaticanalyzer.GradleStaticAnalyzerCodebaseTest.ApplyFromRootProjectProjectDir.subproject
+
+repositories {
+    mavenCentral()
+}
+
+apply from: "$rootProject.projectDir/dependencies.gradle"

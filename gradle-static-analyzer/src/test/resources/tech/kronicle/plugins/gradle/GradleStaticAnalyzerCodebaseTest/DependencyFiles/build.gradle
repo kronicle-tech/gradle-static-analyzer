@@ -1,9 +1,0 @@
-package tech.kronicle.plugins.gradle.GradleStaticAnalyzerCodebaseTest.DependencyFiles
-
-plugins {
-    id "groovy"
-}
-
-dependencies {
-    compile files("libs/example.jar")
-}

@@ -1,0 +1,9 @@
+package tech.kronicle.gradlestaticanalyzer.GradleStaticAnalyzerCodebaseTest.PluginDefinedInSettingsFileWithApplyFalseAndAppliedInBuildFile
+
+plugins {
+    id "org.springframework.boot"
+}
+
+repositories {
+    mavenCentral()
+}

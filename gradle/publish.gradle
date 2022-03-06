@@ -10,7 +10,8 @@ publishing {
     publications {
         mavenJava(MavenPublication) {
             artifactId archivesBaseName
-            artifacts = [jar, javadocJar, sourcesJar]
+
+            from components.java
 
             pom {
                 name = "$group:$archivesBaseName"
