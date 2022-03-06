@@ -1,8 +1,8 @@
 package tech.kronicle.plugins.gradle;
 
 import tech.kronicle.plugins.gradle.internal.constants.MavenPackagings;
-import tech.kronicle.plugintestutils.scanners.BaseCodebaseScannerTest;
-import tech.kronicle.pluginutils.Comparators;
+import tech.kronicle.testutils.BaseTest;
+import tech.kronicle.utils.Comparators;
 import tech.kronicle.sdk.models.Software;
 import tech.kronicle.sdk.models.SoftwareDependencyType;
 
@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 import static java.util.Objects.nonNull;
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class BaseGradleStaticAnalyzerTest extends BaseCodebaseScannerTest {
+public class BaseGradleStaticAnalyzerTest extends BaseTest {
 
     protected Map<SoftwareGroup, List<Software>> getSoftwareGroups(List<Software> software) {
         Map<SoftwareGroup, List<Software>> softwareGroups = software.stream()

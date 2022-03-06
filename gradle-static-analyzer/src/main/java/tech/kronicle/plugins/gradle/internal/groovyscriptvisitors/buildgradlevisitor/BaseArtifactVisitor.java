@@ -15,7 +15,7 @@ import tech.kronicle.plugins.gradle.internal.groovyscriptvisitors.ExpressionVisi
 import tech.kronicle.plugins.gradle.internal.services.BillOfMaterialsLogger;
 import tech.kronicle.plugins.gradle.internal.services.DependencyVersionFetcher;
 import tech.kronicle.plugins.gradle.internal.utils.ArtifactUtils;
-import tech.kronicle.pluginutils.ObjectReference;
+import tech.kronicle.utils.ObjectReference;
 
 import java.util.Objects;
 
