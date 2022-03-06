@@ -1,0 +1,9 @@
+package tech.kronicle.gradlestaticanalyzer.GradleStaticAnalyzerCodebaseTest.DependencyGradleApi
+
+plugins {
+    id "groovy"
+}
+
+dependencies {
+    compile gradleApi()
+}

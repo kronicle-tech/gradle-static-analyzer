@@ -1,0 +1,5 @@
+package tech.kronicle.gradlestaticanalyzer.GradleStaticAnalyzerCodebaseTest.ApplyFromProjectDirParent
+
+plugins {
+    id "java"
+}

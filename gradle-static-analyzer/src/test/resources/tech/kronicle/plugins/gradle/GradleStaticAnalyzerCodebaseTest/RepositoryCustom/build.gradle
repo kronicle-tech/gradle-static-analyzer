@@ -1,5 +1,0 @@
-package tech.kronicle.plugins.gradle.GradleStaticAnalyzerCodebaseTest.RepositoryCustom
-
-repositories {
-    someCustomRepository()
-}

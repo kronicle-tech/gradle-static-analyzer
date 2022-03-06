@@ -1,5 +1,0 @@
-package tech.kronicle.plugins.gradle.GradleStaticAnalyzerCodebaseTest.ApplyFromTo
-
-buildscript {
-    apply from: "$rootDir/gradle/repos.gradle", to: buildscript
-}

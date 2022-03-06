@@ -1,7 +1,0 @@
-package tech.kronicle.plugins.gradle.GradleStaticAnalyzerCodebaseTest.ApplyFromRootDir.gradle
-
-repositories {
-    mavenCentral()
-}
-
-apply from: "$rootDir/dependencies.gradle"
