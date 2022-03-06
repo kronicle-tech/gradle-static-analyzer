@@ -1,8 +1,8 @@
 package tech.kronicle.plugins.gradle.internal.services;
 
 import tech.kronicle.plugins.gradle.config.DownloadCacheConfig;
-import tech.kronicle.pluginutils.BaseFileCache;
-import tech.kronicle.pluginutils.FileUtils;
+import tech.kronicle.utils.BaseFileCache;
+import tech.kronicle.utils.FileUtils;
 
 import java.io.IOException;
 import java.nio.file.Path;

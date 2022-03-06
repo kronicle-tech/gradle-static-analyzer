@@ -46,13 +46,13 @@ import tech.kronicle.plugins.gradle.internal.services.SoftwareRepositoryFactory;
 import tech.kronicle.plugins.gradle.internal.services.SoftwareRepositoryUrlSafetyChecker;
 import tech.kronicle.plugins.gradle.internal.services.UrlExistsCache;
 import tech.kronicle.plugins.gradle.internal.utils.ArtifactUtils;
-import tech.kronicle.pluginutils.FileUtils;
+import tech.kronicle.utils.FileUtils;
 
 import java.time.Duration;
 
-import static tech.kronicle.pluginutils.FileUtilsFactory.createFileUtils;
-import static tech.kronicle.pluginutils.HttpClientFactory.createHttpClient;
-import static tech.kronicle.pluginutils.JsonMapperFactory.createJsonMapper;
+import static tech.kronicle.utils.FileUtilsFactory.createFileUtils;
+import static tech.kronicle.utils.HttpClientFactory.createHttpClient;
+import static tech.kronicle.utils.JsonMapperFactory.createJsonMapper;
 
 public final class GradleStaticAnalyzerFactory {
 

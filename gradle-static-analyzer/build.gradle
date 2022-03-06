@@ -12,7 +12,7 @@ apply from: "$rootDir/gradle/publish.gradle"
 dependencies {
     api "tech.kronicle:kronicle-common:$kronicleVersion"
     api "tech.kronicle:kronicle-sdk:$kronicleVersion"
-    api "tech.kronicle:kronicle-plugin-utils:$kronicleVersion"
+    api "tech.kronicle:kronicle-utils:$kronicleVersion"
     api "org.slf4j:slf4j-api:$slf4jVersion"
     api "tech.kronicle:gradle-version-logic:$gradleVersionLogicVersion"
     api "io.github.resilience4j:resilience4j-retry:$resilience4jVersion"
@@ -24,7 +24,7 @@ dependencies {
     api "org.codehaus.groovy:groovy:$groovyVersion"
     implementation "jakarta.validation:jakarta.validation-api:$jakartaValidationApiVersion"
 
-    testImplementation "tech.kronicle:kronicle-plugin-test-utils:$kronicleVersion"
+    testImplementation "tech.kronicle:kronicle-test-utils:$kronicleVersion"
     testImplementation "org.junit.jupiter:junit-jupiter:$junitVersion"
     testImplementation "org.junit.jupiter:junit-jupiter-params:$junitVersion"
     testImplementation "org.assertj:assertj-core:$assertJVersion"

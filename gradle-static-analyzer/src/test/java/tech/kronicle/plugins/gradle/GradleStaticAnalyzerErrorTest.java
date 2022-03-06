@@ -15,7 +15,7 @@ public class GradleStaticAnalyzerErrorTest extends BaseGradleStaticAnalyzerTest 
     @Test
     public void shouldScanBuildscriptMissingRepositoryBuild() {
         // Given
-        Path codebaseDir = getCodebaseDir("BuildscriptMissingRepository");
+        Path codebaseDir = getResourcesDir("BuildscriptMissingRepository");
 
         // When
         Exception exception = catchException(() -> underTest.analyzeCodebase(codebaseDir));
@@ -30,7 +30,7 @@ public class GradleStaticAnalyzerErrorTest extends BaseGradleStaticAnalyzerTest 
     @Test
     public void shouldScanBuildscriptMissingRepositoryWithEmptyPluginsBuild() {
         // Given
-        Path codebaseDir = getCodebaseDir("BuildscriptMissingRepositoryWithEmptyPlugins");
+        Path codebaseDir = getResourcesDir("BuildscriptMissingRepositoryWithEmptyPlugins");
 
         // When
         Exception exception = catchException(() -> underTest.analyzeCodebase(codebaseDir));

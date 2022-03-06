@@ -59,7 +59,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleNone() {
         // Given
-        Path codebaseDir = getCodebaseDir("None");
+        Path codebaseDir = getResourcesDir("None");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -75,7 +75,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleEmpty() {
         // Given
-        Path codebaseDir = getCodebaseDir("Empty");
+        Path codebaseDir = getResourcesDir("Empty");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -92,7 +92,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleRootProjectBuiltInProperties() {
         // Given
-        Path codebaseDir = getCodebaseDir("RootProjectBuiltInProperties");
+        Path codebaseDir = getResourcesDir("RootProjectBuiltInProperties");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -109,7 +109,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleProjectBuiltInProperties() {
         // Given
-        Path codebaseDir = getCodebaseDir("ProjectBuiltInProperties");
+        Path codebaseDir = getResourcesDir("ProjectBuiltInProperties");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -126,7 +126,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleDependencyClass() {
         // Given
-        Path codebaseDir = getCodebaseDir("DependencyClass");
+        Path codebaseDir = getResourcesDir("DependencyClass");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -147,7 +147,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleDependency() {
         // Given
-        Path codebaseDir = getCodebaseDir("Dependency");
+        Path codebaseDir = getResourcesDir("Dependency");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -168,7 +168,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleDependencyPackaging() {
         // Given
-        Path codebaseDir = getCodebaseDir("DependencyPackaging");
+        Path codebaseDir = getResourcesDir("DependencyPackaging");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -189,7 +189,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleDependencyDynamicVersion() {
         // Given
-        Path codebaseDir = getCodebaseDir("DependencyDynamicVersion");
+        Path codebaseDir = getResourcesDir("DependencyDynamicVersion");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -210,7 +210,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleDependencyPomXmlWithoutNamespace() {
         // Given
-        Path codebaseDir = getCodebaseDir("DependencyPomXmlWithoutNamespace");
+        Path codebaseDir = getResourcesDir("DependencyPomXmlWithoutNamespace");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -231,7 +231,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleDependencyFollowRedirect() {
         // Given
-        Path codebaseDir = getCodebaseDir("DependencyFollowRedirect");
+        Path codebaseDir = getResourcesDir("DependencyFollowRedirect");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -252,7 +252,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleDependencyList() {
         // Given
-        Path codebaseDir = getCodebaseDir("DependencyList");
+        Path codebaseDir = getResourcesDir("DependencyList");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -274,7 +274,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleApplyPlugin() {
         // Given
-        Path codebaseDir = getCodebaseDir("ApplyPlugin");
+        Path codebaseDir = getResourcesDir("ApplyPlugin");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -296,7 +296,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleApplyPluginClass() {
         // Given
-        Path codebaseDir = getCodebaseDir("ApplyPluginClass");
+        Path codebaseDir = getResourcesDir("ApplyPluginClass");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -316,7 +316,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleApplyPluginImportedClass() {
         // Given
-        Path codebaseDir = getCodebaseDir("ApplyPluginImportedClass");
+        Path codebaseDir = getResourcesDir("ApplyPluginImportedClass");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -336,7 +336,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandlePluginProperty() {
         // Given
-        Path codebaseDir = getCodebaseDir("PluginProperty");
+        Path codebaseDir = getResourcesDir("PluginProperty");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -356,7 +356,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandlePluginDefinedInSettingsFileWithApplyFalse() {
         // Given
-        Path codebaseDir = getCodebaseDir("PluginDefinedInSettingsFileWithApplyFalse");
+        Path codebaseDir = getResourcesDir("PluginDefinedInSettingsFileWithApplyFalse");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -375,7 +375,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandlePluginDefinedInSettingsFileWithApplyFalseAndAppliedInBuildFile() {
         // Given
-        Path codebaseDir = getCodebaseDir("PluginDefinedInSettingsFileWithApplyFalseAndAppliedInBuildFile");
+        Path codebaseDir = getResourcesDir("PluginDefinedInSettingsFileWithApplyFalseAndAppliedInBuildFile");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -396,7 +396,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandlePluginDefinedInSettingsFileWithApplyFalseAndDefinedAgainInBuildFile() {
         // Given
-        Path codebaseDir = getCodebaseDir("PluginDefinedInSettingsFileWithApplyFalseAndAppliedInBuildFile");
+        Path codebaseDir = getResourcesDir("PluginDefinedInSettingsFileWithApplyFalseAndAppliedInBuildFile");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -417,7 +417,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandlePluginDefinedInSettingsFileWithApplyTrue() {
         // Given
-        Path codebaseDir = getCodebaseDir("PluginDefinedInSettingsFileWithApplyTrue");
+        Path codebaseDir = getResourcesDir("PluginDefinedInSettingsFileWithApplyTrue");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -437,7 +437,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleSpringBootPlugin() {
         // Given
-        Path codebaseDir = getCodebaseDir("SpringBootPlugin");
+        Path codebaseDir = getResourcesDir("SpringBootPlugin");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -459,7 +459,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleSpringBootPluginApplyPlugin() {
         // Given
-        Path codebaseDir = getCodebaseDir("SpringBootPluginApplyPlugin");
+        Path codebaseDir = getResourcesDir("SpringBootPluginApplyPlugin");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -482,7 +482,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleSpringBootPluginPluginsAndApplyPlugin() {
         // Given
-        Path codebaseDir = getCodebaseDir("SpringBootPluginPluginsAndApplyPlugin");
+        Path codebaseDir = getResourcesDir("SpringBootPluginPluginsAndApplyPlugin");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -504,7 +504,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleGradleWrapper() {
         // Given
-        Path codebaseDir = getCodebaseDir("GradleWrapper");
+        Path codebaseDir = getResourcesDir("GradleWrapper");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -526,7 +526,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleDependencyNamedParts() {
         // Given
-        Path codebaseDir = getCodebaseDir("DependencyNamedParts");
+        Path codebaseDir = getResourcesDir("DependencyNamedParts");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -547,7 +547,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleDependencyNamedPartsWithClassifierAndExt() {
         // Given
-        Path codebaseDir = getCodebaseDir("DependencyNamedPartsWithClassifierAndExt");
+        Path codebaseDir = getResourcesDir("DependencyNamedPartsWithClassifierAndExt");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -568,7 +568,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleDependencyMultipleInOneCall() {
         // Given
-        Path codebaseDir = getCodebaseDir("DependencyMultipleInOneCall");
+        Path codebaseDir = getResourcesDir("DependencyMultipleInOneCall");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -590,7 +590,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleDependencyMultipleWithNamedPartsInOneCall() {
         // Given
-        Path codebaseDir = getCodebaseDir("DependencyMultipleWithNamedPartsInOneCall");
+        Path codebaseDir = getResourcesDir("DependencyMultipleWithNamedPartsInOneCall");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -612,7 +612,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleDependencyStringConcatenation() {
         // Given
-        Path codebaseDir = getCodebaseDir("DependencyStringConcatenation");
+        Path codebaseDir = getResourcesDir("DependencyStringConcatenation");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -633,7 +633,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleDependencyProject() {
         // Given
-        Path codebaseDir = getCodebaseDir("DependencyProject");
+        Path codebaseDir = getResourcesDir("DependencyProject");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -652,7 +652,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleDependencyLocalGroovy() {
         // Given
-        Path codebaseDir = getCodebaseDir("DependencyLocalGroovy");
+        Path codebaseDir = getResourcesDir("DependencyLocalGroovy");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -671,7 +671,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleDependencyGradleApi() {
         // Given
-        Path codebaseDir = getCodebaseDir("DependencyGradleApi");
+        Path codebaseDir = getResourcesDir("DependencyGradleApi");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -690,7 +690,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleDependencyFileTree() {
         // Given
-        Path codebaseDir = getCodebaseDir("DependencyFileTree");
+        Path codebaseDir = getResourcesDir("DependencyFileTree");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -709,7 +709,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleDependencyFiles() {
         // Given
-        Path codebaseDir = getCodebaseDir("DependencyFiles");
+        Path codebaseDir = getResourcesDir("DependencyFiles");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -728,7 +728,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleDependencyVariable() {
         // Given
-        Path codebaseDir = getCodebaseDir("DependencyVariable");
+        Path codebaseDir = getResourcesDir("DependencyVariable");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -750,7 +750,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleDependencyVariableInDependencies() {
         // Given
-        Path codebaseDir = getCodebaseDir("DependencyVariableInDependencies");
+        Path codebaseDir = getResourcesDir("DependencyVariableInDependencies");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -772,7 +772,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleDependencyDuplicates() {
         // Given
-        Path codebaseDir = getCodebaseDir("DependencyDuplicates");
+        Path codebaseDir = getResourcesDir("DependencyDuplicates");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -791,7 +791,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleDependencyExclusion() {
         // Given
-        Path codebaseDir = getCodebaseDir("DependencyExclusion");
+        Path codebaseDir = getResourcesDir("DependencyExclusion");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -813,7 +813,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleProjectProperties() {
         // Given
-        Path codebaseDir = getCodebaseDir("ProjectProperties");
+        Path codebaseDir = getResourcesDir("ProjectProperties");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -835,7 +835,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleProjectPropertyAssignment() {
         // Given
-        Path codebaseDir = getCodebaseDir("ProjectPropertyAssignment");
+        Path codebaseDir = getResourcesDir("ProjectPropertyAssignment");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -856,7 +856,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleProjectPropertySetMethod() {
         // Given
-        Path codebaseDir = getCodebaseDir("ProjectPropertySetMethod");
+        Path codebaseDir = getResourcesDir("ProjectPropertySetMethod");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -877,7 +877,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleBuildscriptProjectProperty() {
         // Given
-        Path codebaseDir = getCodebaseDir("BuildscriptProjectProperty");
+        Path codebaseDir = getResourcesDir("BuildscriptProjectProperty");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -898,7 +898,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleBuildscriptProjectPropertyAssignment() {
         // Given
-        Path codebaseDir = getCodebaseDir("BuildscriptProjectPropertyAssignment");
+        Path codebaseDir = getResourcesDir("BuildscriptProjectPropertyAssignment");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -917,7 +917,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleBuildscriptDependencyWithNoBuildscriptRepository() {
         // Given
-        Path codebaseDir = getCodebaseDir("BuildscriptDependencyWithNoBuildscriptRepository");
+        Path codebaseDir = getResourcesDir("BuildscriptDependencyWithNoBuildscriptRepository");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -937,7 +937,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleGradleProperties() {
         // Given
-        Path codebaseDir = getCodebaseDir("GradleProperties");
+        Path codebaseDir = getResourcesDir("GradleProperties");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -958,7 +958,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleGradlePropertiesAndProjectProperties() {
         // Given
-        Path codebaseDir = getCodebaseDir("GradlePropertiesAndProjectProperties");
+        Path codebaseDir = getResourcesDir("GradlePropertiesAndProjectProperties");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -979,7 +979,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleMultiProject() {
         // Given
-        Path codebaseDir = getCodebaseDir("MultiProject");
+        Path codebaseDir = getResourcesDir("MultiProject");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -1001,7 +1001,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleMultiProjectNestedGradleProperties() {
         // Given
-        Path codebaseDir = getCodebaseDir("MultiProjectNestedGradleProperties");
+        Path codebaseDir = getResourcesDir("MultiProjectNestedGradleProperties");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -1023,7 +1023,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleMultiProjectMissingBuildFile() {
         // Given
-        Path codebaseDir = getCodebaseDir("MultiProjectMissingBuildFile");
+        Path codebaseDir = getResourcesDir("MultiProjectMissingBuildFile");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -1044,7 +1044,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleMultiProjectSpringBootPlugin() {
         // Given
-        Path codebaseDir = getCodebaseDir("MultiProjectSpringBootPlugin");
+        Path codebaseDir = getResourcesDir("MultiProjectSpringBootPlugin");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -1066,7 +1066,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleMultiProjectSpringBootPluginApplyFalse() {
         // Given
-        Path codebaseDir = getCodebaseDir("MultiProjectSpringBootPluginApplyFalse");
+        Path codebaseDir = getResourcesDir("MultiProjectSpringBootPluginApplyFalse");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -1089,7 +1089,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleMultiProjectInheritedProjectProperties() {
         // Given
-        Path codebaseDir = getCodebaseDir("MultiProjectInheritedProjectProperties");
+        Path codebaseDir = getResourcesDir("MultiProjectInheritedProjectProperties");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -1110,7 +1110,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleMultiProjectOverriddenProjectProperties() {
         // Given
-        Path codebaseDir = getCodebaseDir("MultiProjectOverriddenProjectProperties");
+        Path codebaseDir = getResourcesDir("MultiProjectOverriddenProjectProperties");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -1132,7 +1132,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleMultiProjectAllprojects() {
         // Given
-        Path codebaseDir = getCodebaseDir("MultiProjectAllprojects");
+        Path codebaseDir = getResourcesDir("MultiProjectAllprojects");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -1152,7 +1152,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleMultiProjectSubprojects() {
         // Given
-        Path codebaseDir = getCodebaseDir("MultiProjectSubprojects");
+        Path codebaseDir = getResourcesDir("MultiProjectSubprojects");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -1172,7 +1172,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleMultiProjectSubprojectsRepositories() {
         // Given
-        Path codebaseDir = getCodebaseDir("MultiProjectSubprojectsRepositories");
+        Path codebaseDir = getResourcesDir("MultiProjectSubprojectsRepositories");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -1194,7 +1194,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandlePlatformDependency() {
         // Given
-        Path codebaseDir = getCodebaseDir("PlatformDependency");
+        Path codebaseDir = getResourcesDir("PlatformDependency");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -1215,7 +1215,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleApplyFrom() {
         // Given
-        Path codebaseDir = getCodebaseDir("ApplyFrom");
+        Path codebaseDir = getResourcesDir("ApplyFrom");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -1236,7 +1236,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleApplyFromRootDir() {
         // Given
-        Path codebaseDir = getCodebaseDir("ApplyFromRootDir");
+        Path codebaseDir = getResourcesDir("ApplyFromRootDir");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -1257,7 +1257,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleApplyFromRootProjectProjectDir() {
         // Given
-        Path codebaseDir = getCodebaseDir("ApplyFromRootProjectProjectDir");
+        Path codebaseDir = getResourcesDir("ApplyFromRootProjectProjectDir");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -1278,7 +1278,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleApplyFromProjectDir() {
         // Given
-        Path codebaseDir = getCodebaseDir("ApplyFromProjectDir");
+        Path codebaseDir = getResourcesDir("ApplyFromProjectDir");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -1299,7 +1299,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleApplyFromProjectDirParent() {
         // Given
-        Path codebaseDir = getCodebaseDir("ApplyFromProjectDirParent");
+        Path codebaseDir = getResourcesDir("ApplyFromProjectDirParent");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -1320,7 +1320,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleApplyFromProjectRelativePath() {
         // Given
-        Path codebaseDir = getCodebaseDir("ApplyFromProjectRelativePath");
+        Path codebaseDir = getResourcesDir("ApplyFromProjectRelativePath");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -1341,7 +1341,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleApplyFromTo() {
         // Given
-        Path codebaseDir = getCodebaseDir("ApplyFromTo");
+        Path codebaseDir = getResourcesDir("ApplyFromTo");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -1359,7 +1359,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleSpringDependencyManagementPlugin() {
         // Given
-        Path codebaseDir = getCodebaseDir("SpringDependencyManagementPlugin");
+        Path codebaseDir = getResourcesDir("SpringDependencyManagementPlugin");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -1381,7 +1381,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleSpringDependencyManagementPluginStringConcatenation() {
         // Given
-        Path codebaseDir = getCodebaseDir("SpringDependencyManagementPluginStringConcatenation");
+        Path codebaseDir = getResourcesDir("SpringDependencyManagementPluginStringConcatenation");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -1403,7 +1403,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleImport() {
         // Given
-        Path codebaseDir = getCodebaseDir("Import");
+        Path codebaseDir = getResourcesDir("Import");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -1420,7 +1420,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleMicronautApplicationPluginWithGradleProperty() {
         // Given
-        Path codebaseDir = getCodebaseDir("MicronautApplicationPluginWithGradleProperty");
+        Path codebaseDir = getResourcesDir("MicronautApplicationPluginWithGradleProperty");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -1441,7 +1441,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleMicronautApplicationPluginWithGradlePropertyAndMicronautBlock() {
         // Given
-        Path codebaseDir = getCodebaseDir("MicronautApplicationPluginWithGradlePropertyAndMicronautBlock");
+        Path codebaseDir = getResourcesDir("MicronautApplicationPluginWithGradlePropertyAndMicronautBlock");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -1462,7 +1462,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleMicronautApplicationPluginWithMicronautBlock() {
         // Given
-        Path codebaseDir = getCodebaseDir("MicronautApplicationPluginWithMicronautBlock");
+        Path codebaseDir = getResourcesDir("MicronautApplicationPluginWithMicronautBlock");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -1483,7 +1483,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleMicronautLibraryPluginWithGradleProperty() {
         // Given
-        Path codebaseDir = getCodebaseDir("MicronautLibraryPluginWithGradleProperty");
+        Path codebaseDir = getResourcesDir("MicronautLibraryPluginWithGradleProperty");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -1504,7 +1504,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleMicronautLibraryPluginWithGradlePropertyAndMicronautBlock() {
         // Given
-        Path codebaseDir = getCodebaseDir("MicronautLibraryPluginWithGradlePropertyAndMicronautBlock");
+        Path codebaseDir = getResourcesDir("MicronautLibraryPluginWithGradlePropertyAndMicronautBlock");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -1525,7 +1525,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleMicronautLibraryPluginWithMicronautBlock() {
         // Given
-        Path codebaseDir = getCodebaseDir("MicronautLibraryPluginWithMicronautBlock");
+        Path codebaseDir = getResourcesDir("MicronautLibraryPluginWithMicronautBlock");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -1546,7 +1546,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleRepositoryMavenUrlMethodCall() {
         // Given
-        Path codebaseDir = getCodebaseDir("RepositoryMavenUrlMethodCall");
+        Path codebaseDir = getResourcesDir("RepositoryMavenUrlMethodCall");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -1564,7 +1564,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleRepositoryMavenUrlMethodCallGString() {
         // Given
-        Path codebaseDir = getCodebaseDir("RepositoryMavenUrlMethodCallGString");
+        Path codebaseDir = getResourcesDir("RepositoryMavenUrlMethodCallGString");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -1582,7 +1582,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleRepositoryMavenUrlProperty() {
         // Given
-        Path codebaseDir = getCodebaseDir("RepositoryMavenUrlProperty");
+        Path codebaseDir = getResourcesDir("RepositoryMavenUrlProperty");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -1600,7 +1600,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleRepositoryMavenUrlPropertyGString() {
         // Given
-        Path codebaseDir = getCodebaseDir("RepositoryMavenUrlPropertyGString");
+        Path codebaseDir = getResourcesDir("RepositoryMavenUrlPropertyGString");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -1618,7 +1618,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleRepositoryMavenCentral() {
         // Given
-        Path codebaseDir = getCodebaseDir("RepositoryMavenCentral");
+        Path codebaseDir = getResourcesDir("RepositoryMavenCentral");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -1636,7 +1636,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleRepositoryJCenter() {
         // Given
-        Path codebaseDir = getCodebaseDir("RepositoryJCenter");
+        Path codebaseDir = getResourcesDir("RepositoryJCenter");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -1654,7 +1654,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleRepositoryGoogle() {
         // Given
-        Path codebaseDir = getCodebaseDir("RepositoryGoogle");
+        Path codebaseDir = getResourcesDir("RepositoryGoogle");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -1672,7 +1672,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     @Test
     public void shouldHandleRepositoryCustom() {
         // Given
-        Path codebaseDir = getCodebaseDir("RepositoryCustom");
+        Path codebaseDir = getResourcesDir("RepositoryCustom");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
@@ -1696,7 +1696,7 @@ public class GradleStaticAnalyzerCodebaseTest extends BaseGradleStaticAnalyzerTe
     public void shouldHandleRepositoryCustomWithAuthenticationHeader() {
         // Given
         wireMockServer = new MavenRepositoryWireMockFactory().create();
-        Path codebaseDir = getCodebaseDir("RepositoryCustomWithAuthenticationHeader");
+        Path codebaseDir = getResourcesDir("RepositoryCustomWithAuthenticationHeader");
 
         // When
         GradleAnalysis gradleAnalysis = underTest.analyzeCodebase(codebaseDir);
