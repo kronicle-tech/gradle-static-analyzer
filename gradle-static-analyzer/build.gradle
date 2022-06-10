@@ -22,6 +22,7 @@ dependencies {
     api "jakarta.xml.bind:jakarta.xml.bind-api:$jakartaXmlBindApiVersion"
     api "com.sun.xml.bind:jaxb-impl:$eclipseJaxbVersion"
     api "org.codehaus.groovy:groovy:$groovyVersion"
+    api "com.google.guava:guava:$guavaVersion"
     implementation "jakarta.validation:jakarta.validation-api:$jakartaValidationApiVersion"
 
     testImplementation "tech.kronicle:kronicle-test-utils:$kronicleVersion"
