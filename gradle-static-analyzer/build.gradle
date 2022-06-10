@@ -19,7 +19,7 @@ dependencies {
     api "com.fasterxml.jackson.core:jackson-core:$jacksonVersion"
     api "com.fasterxml.jackson.core:jackson-databind:$jacksonVersion"
     // See https://stackoverflow.com/a/43574427
-    api "jakarta.xml.bind:jakarta.xml.bind-api:$jakartaXmlBindApiVersion"
+    api "jakarta.xml.bind:jakarta.xml.bind-api:$jakartaXmlBindingVersion"
     api "com.sun.xml.bind:jaxb-impl:$eclipseJaxbVersion"
     api "org.codehaus.groovy:groovy:$groovyVersion"
     api "com.google.guava:guava:$guavaVersion"
