@@ -1,8 +1,9 @@
 package tech.kronicle.gradlestaticanalyzer.internal.utils;
 
-import jakarta.xml.bind.JAXBContext;
-import jakarta.xml.bind.Unmarshaller;
 import lombok.SneakyThrows;
+
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.Unmarshaller;
 
 public final class JaxbUnmarshallerFactory {
 

@@ -1,7 +1,5 @@
 package tech.kronicle.gradlestaticanalyzer.internal.services;
 
-import jakarta.xml.bind.JAXBException;
-import jakarta.xml.bind.Unmarshaller;
 import lombok.RequiredArgsConstructor;
 import tech.kronicle.common.StringEscapeUtils;
 import tech.kronicle.gradlestaticanalyzer.internal.models.mavenxml.Metadata;
@@ -10,6 +8,8 @@ import tech.kronicle.gradlestaticanalyzer.internal.models.mavenxml.metadata.Vers
 import tech.kronicle.gradlestaticanalyzer.internal.utils.ArtifactUtils;
 import tech.kronicle.sdk.models.SoftwareRepository;
 
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Unmarshaller;
 import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamException;
 import java.io.StringReader;
