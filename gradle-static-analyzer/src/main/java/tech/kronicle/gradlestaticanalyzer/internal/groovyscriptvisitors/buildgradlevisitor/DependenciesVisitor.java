@@ -4,6 +4,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.codehaus.groovy.ast.expr.MethodCallExpression;
 import org.slf4j.Logger;
 import tech.kronicle.common.StringEscapeUtils;
+import tech.kronicle.gradlestaticanalyzer.internal.constants.SoftwareScopes;
 import tech.kronicle.gradlestaticanalyzer.internal.groovyscriptvisitors.ProcessPhase;
 import tech.kronicle.gradlestaticanalyzer.internal.models.PomOutcome;
 import tech.kronicle.gradlestaticanalyzer.internal.services.ArtifactVersionResolver;
@@ -11,7 +12,6 @@ import tech.kronicle.gradlestaticanalyzer.internal.services.PomFetcher;
 import tech.kronicle.gradlestaticanalyzer.internal.utils.InheritingHashSet;
 import tech.kronicle.sdk.models.Software;
 import tech.kronicle.sdk.models.SoftwareDependencyType;
-import tech.kronicle.sdk.models.SoftwareScope;
 
 import java.util.Objects;
 import java.util.Set;
@@ -67,7 +67,7 @@ public class DependenciesVisitor extends BaseArtifactVisitor {
             versionSelector = null;
         }
 
-        SoftwareScope scope = (visitorState().getProcessPhase() == ProcessPhase.BUILDSCRIPT_DEPENDENCIES) ? SoftwareScope.BUILDSCRIPT : null;
+        String scope = (visitorState().getProcessPhase() == ProcessPhase.BUILDSCRIPT_DEPENDENCIES) ? SoftwareScopes.BUILDSCRIPT : null;
         InheritingHashSet<Software> software = visitorState().getSoftware();
 
         versions.forEach(newVersion -> {
