@@ -1,8 +1,8 @@
 package tech.kronicle.gradlestaticanalyzer.internal.testconstants;
 
+import tech.kronicle.gradlestaticanalyzer.internal.constants.SoftwareScopes;
 import tech.kronicle.sdk.models.Software;
 import tech.kronicle.sdk.models.SoftwareDependencyType;
-import tech.kronicle.sdk.models.SoftwareScope;
 import tech.kronicle.sdk.models.SoftwareType;
 
 public final class SoftwareItems {
@@ -20,7 +20,7 @@ public final class SoftwareItems {
             .dependencyType(SoftwareDependencyType.DIRECT)
             .name("org.springframework.boot:spring-boot-gradle-plugin")
             .version("2.3.4.RELEASE")
-            .scope(SoftwareScope.BUILDSCRIPT)
+            .scope(SoftwareScopes.BUILDSCRIPT)
             .build();
     public static final Software DEPENDENCY_CHECK_GRADLE_6_0_2_BUILDSCRIPT = Software
             .builder()
@@ -28,7 +28,7 @@ public final class SoftwareItems {
             .dependencyType(SoftwareDependencyType.DIRECT)
             .name("org.owasp:dependency-check-gradle")
             .version("6.0.2")
-            .scope(SoftwareScope.BUILDSCRIPT)
+            .scope(SoftwareScopes.BUILDSCRIPT)
             .build();
     public static final Software GRADLE_WRAPPER_6_7 = Software
             .builder()
